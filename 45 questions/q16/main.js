@@ -1,0 +1,11 @@
+var listofguest = ["Fayaz", "Farhan", "Nabeel", "Zurain"];
+var NO = listofguest[0];
+console.log(NO, "is not coming today");
+listofguest.splice(0, 1, "Qurban ALI");
+console.log("We have a new bigger table!");
+listofguest.unshift("Baba");
+listofguest.push("daniyal");
+var middleGuest = Math.floor(listofguest.length / 2);
+listofguest.splice(middleGuest, 0, "Nosheen");
+console.log("new list of Guests");
+listofguest.forEach(function (newGuest) { return console.log("".concat(newGuest, ", You are invited to the party")); });
